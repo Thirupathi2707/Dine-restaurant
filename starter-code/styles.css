@@ -5,7 +5,22 @@
 }
 
 body {
-    background-color: black;
+    background-color: hsl(0, 69%, 3%);
+}
+
+.hero {
+    background-image:
+
+        linear-gradient(
+            to right,
+            black 38%,
+            rgba(50, 50, 50, 0.2)38%,
+            rgba(50, 50, 50, 0.2)100%
+            ),
+    url("./images/homepage/hero-bg-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .hero-header {
