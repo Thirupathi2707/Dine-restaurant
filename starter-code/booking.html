@@ -5,34 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Dine Website Challenge</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Dine | Book a Table</title>
 </head>
-<body>
+<body class="booking-page">
+  <header class="booking-hero">
+    <div class="booking-topbar">
+      <a href="./index.html" class="logo-link" aria-label="Go back to home page">
+        <img src="./images/logo.svg" alt="Dine logo">
+      </a>
+    </div>
 
-  Reservations
+    <div class="booking-intro">
+      <p class="eyebrow">Reservations</p>
+      <h1>Book a table</h1>
+      <p>We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
+    </div>
+  </header>
 
-  We can’t wait to host you. If you have any special requirements please feel free to 
-  call on the phone number below. We’ll be happy to accommodate you.
+  <main class="booking-shell">
+    <section class="reservation-card" aria-label="Booking form">
+      <form class="reservation-form">
+        <label class="field">
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Name" required>
+        </label>
 
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" placeholder="Email" required>
+        </label>
 
+        <div class="field-row">
+          <label class="field">
+            <span>Pick a date</span>
+            <input type="date" name="date" required>
+          </label>
 
-  Name
-  Email
-  Pick a date
-  Pick a time
+          <label class="field">
+            <span>Pick a time</span>
+            <input type="time" name="time" required>
+          </label>
+        </div>
 
-  Make Reservation
+        <button type="submit" class="primary-btn">Make Reservation</button>
+      </form>
+    </section>
 
+    <aside class="booking-info" aria-label="Restaurant information">
+      <p class="address-line">Marthwaite, Sedbergh</p>
+      <p class="address-line">Cumbria</p>
+      <p class="address-line">+00 44 123 4567</p>
 
-
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
-
+      <div class="opening-hours">
+        <h2>Open Times</h2>
+        <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+        <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+      </div>
+    </aside>
+  </main>
 </body>
 </html>
